@@ -38,7 +38,7 @@ title(['Log-normal Path-loss Model,fc=',num2str(fc/1e6),'MHz'])
 xlabel('Distance[m]'),ylabel('Path loss[dB]')
 legend('path 1','path 2','path 3')
 
-
+saveas(gcf,'1.jpg')
 
 
 
