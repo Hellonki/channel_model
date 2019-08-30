@@ -23,7 +23,7 @@ xlabel('Distance[m]'),ylabel('Path loss[dB]')
 legend('Gt=1,Gr=1','Gt=1,Gr=0.5','Gt=0.5,Gr=0.5')
 
 subplot(132)
-semilog(distance,y_logdist(1,:),'k-o',distance,y_logdist(2,:),'k-^',distance,y_logdist(3,:),'k-s')
+semilogx(distance,y_logdist(1,:),'k-o',distance,y_logdist(2,:),'k-^',distance,y_logdist(3,:),'k-s')
 grid on
 axis([1 1000 40 110])
 title(['Log-distance Path-loss Model,fc=',num2str(fc/1e6),'MHz'])
@@ -31,7 +31,7 @@ xlabel('Distance[m]'),ylabel('Path loss[dB]')
 legend('n=2','n=3','n=6')
 
 subplot(133)
-semilog(distance,y_lognorm(1,:),'k-o',distance,y_lognorm(2,:),'k-^',distance,y_lognorm(3,:),'k-s')
+semilogx(distance,y_lognorm(1,:),'k-o',distance,y_lognorm(2,:),'k-^',distance,y_lognorm(3,:),'k-s')
 grid on
 axis([1 1000 40 110])
 title(['Log-normal Path-loss Model,fc=',num2str(fc/1e6),'MHz'])

@@ -13,7 +13,7 @@ if nargin==3
     Gr=1;
 end
 lamda=3e8/fc;      %ÐÅºÅµÄ²¨³¤
-tmp=lamda/(4*pi*dist).*sqrt(Gt*Gr);
+tmp=lamda./(4*pi*dist).*sqrt(Gt*Gr);
 PL=-20*log10(tmp);
 
 end
